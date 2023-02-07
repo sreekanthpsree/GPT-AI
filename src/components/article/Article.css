@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --font-family: "Manrope", sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+
+  --color-bg: #010102;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
+}
+.maker__blog-container_article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-footer);
+}
+.maker__blog-container_article-image {
+  width: 100%;
+  height: 100%;
+  background: var(--color-footer);
+}
+.maker__blog-container_article-image img {
+  width: 100%;
+  height: 100%;
+}
+.maker__blog-container_article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  height: 100%;
+}
+.maker__blog-container_article-content p {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 11.649px;
+  line-height: 35px;
+  color: white;
+}
+.maker__blog-container_article-content h3 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 25.11px;
+  line-height: 30px;
+  color: white;
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+.maker__blog-container_article-content p:last-child {
+  cursor: pointer;
+}
+@media screen and (max-width: 550px) {
+  .maker__blog-container_article-content h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

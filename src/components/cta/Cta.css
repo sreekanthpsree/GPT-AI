@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --font-family: "Manrope", sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+
+  --color-bg: #010102;
+  --color-footer: #031b34;
+  --color-blog: #042c54;
+  --color-text: #81afdd;
+  --color-subtext: #ff8a71;
+}
+.maker__cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem;
+  margin: 4rem;
+  border-radius: 1rem;
+  background: var(--gradient-bar);
+}
+.maker__cta-content p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  color: #0e0e0e;
+}
+.maker__cta-content h3 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 45px;
+  color: #000000;
+}
+.maker__cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+.maker__cta-button button {
+  background: #000000;
+  color: white;
+  border-radius: 40px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  min-width: 150px;
+}
+@media screen and(max-width:650px) {
+  .maker__cta {
+    flex-direction: column;
+  }
+  .maker__cta-button {
+    margin: 2rem 0 0;
+  }
+}
+@media screen and(max-width:550px) {
+  .maker__cta {
+    margin: 4rem 2rem;
+  }
+  .maker__cta-content h3 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .maker__cta-button button {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

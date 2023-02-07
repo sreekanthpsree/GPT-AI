@@ -1,0 +1,15 @@
+.maker__brand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.maker__brand div {
+  flex: 1;
+  max-width: 150px;
+  min-width: 120px;
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+}
